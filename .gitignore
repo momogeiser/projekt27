@@ -1,3 +1,8 @@
+# Projektspezifisch
+.fit
+.tcx
+.gpx
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
