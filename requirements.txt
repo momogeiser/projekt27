@@ -5,6 +5,8 @@ charset-normalizer==3.5.3
 curl_cffi==0.17.0
 dotenv==0.9.9
 executing==2.3.0
+fitfile==2.0.0
+fitparse==1.2.0
 garminconnect==0.3.20
 garth==0.8.0
 googleapis-common-protos==1.76.0
@@ -12,6 +14,7 @@ idna==3.20
 logfire==4.41.0
 markdown-it-py==4.3.0
 mdurl==0.1.2
+numpy==2.5.5
 oauthlib==4.0.1
 opentelemetry-api==1.44.0
 opentelemetry-exporter-otlp-proto-common==1.44.0
@@ -21,12 +24,14 @@ opentelemetry-proto==1.44.0
 opentelemetry-sdk==1.44.0
 opentelemetry-semantic-conventions==0.65b0
 packaging==26.4
+pandas==3.1.1
 protobuf==7.36.2
 pycparser==3.12
 pydantic==2.13.5
 pydantic-settings==2.16.3
 pydantic_core==2.46.5
 Pygments==2.21.0
+python-dateutil==4.0.0
 python-dotenv==1.2.4
 pytz==2026.6
 requests==2.34.2
@@ -34,7 +39,9 @@ requests-oauthlib==1.3.1
 rich==15.0.0
 typing-inspection==0.4.2
 typing_extensions==4.16.0
+tzdata==2026.6
 ua-generator==2.1.9
 urllib3==2.6.3
 wrapt==2.5.2
+xlsxwriter==3.3.4
 zope.interface==8.7
