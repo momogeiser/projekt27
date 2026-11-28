@@ -13,7 +13,7 @@ from garminconnect import Garmin  # Bibliothek mit vielen Methoden für GarminCo
 client = einloggen()  # Login bei Garmin Connect mit meinen Zugangsdaten aus .env
 
 # Ab Wann Dateien geladen werden sollen
-activity_start_date = datetime.date(2026, 7, 1)
+activity_start_date = datetime.date(2026, 11, 20)
 
 # Aktivitäten herunterladen (Aktivitäten als Liste, in der Liste die jeweilige Aktivität als Dictionary),
 # nur Übersichtsdaten der Aktivität
@@ -24,7 +24,7 @@ activities = client.get_activities_by_date(
 
 
 # für Duplikatskontrolle, Liste mit allen Dateien
-vorhanden = os.listdir("/Users/momogeiser/Momos Sachen/Programmieren/Python/testProjekt/Daten")
+vorhanden = os.listdir("/Users/momogeiser/MomosSachen/Programmieren/Python/projekt27/Daten")
 # Liste mit den IDs (nicht strip('_ACTIVITY.fit') verwenden, strip löscht
 # alle entsprechenden Zeichen), bspw. strip(_ACTIVITY1.fit) löscht auch alle 1 aus der ID
 vorhanden_id = [s.removesuffix("_ACTIVITY.fit") for s in vorhanden]
@@ -44,5 +44,5 @@ for activity in activities:  # loop durch alle Aktivitäten aus der Liste activi
             name_im_zip = zf.namelist()[0]  # [0] da bei Garmin immer nur eine Datei im Zip
             zf.extract(  # extract ist eine Methode aus zipfile die Zip-Files auspackt
                 name_im_zip,
-                path="/Users/momogeiser/Momos Sachen/Programmieren/Python/testProjekt/FIT Dateien",
+                path="/Users/momogeiser/MomosSachen/Programmieren/Python/projekt27/Daten",
             )
